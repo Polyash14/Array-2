@@ -18,7 +18,12 @@ namespace Array_2
 
             Console.WriteLine("Size Array");
             int size = int.Parse(Console.ReadLine());
-            throw new Exception("Введите число больше или равное 4");
+
+            if ( size < 4)
+            {
+                throw new Exception("Введите число больше или равное 4");
+            }
+            
 
             int [] arr =  new int [size];
 
